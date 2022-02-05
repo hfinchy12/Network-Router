@@ -53,6 +53,4 @@ public:
 
 	Node<T>* getHead() const { return head; }
 };
-
-// std::ostream& operator<<(std::ostream& os, const DoublyLinkedList& ll);
 #endif

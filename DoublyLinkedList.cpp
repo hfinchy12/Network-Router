@@ -1,4 +1,3 @@
-// TODO: Write the source functions for the DoublyDoublyLinkedList
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -19,11 +18,9 @@ DoublyLinkedList<T>::~DoublyLinkedList() {
 
 template <typename T>
 DoublyLinkedList<T>::DoublyLinkedList(const DoublyLinkedList<T>& source) {
-    // Implement this function
     head = nullptr;
     tail = nullptr;
     list_size = 0;
-    // clear();
     Node<T>* curr = source.head;
     for(int i = 0; i < source.list_size; i++){
         this->insert(curr->getData(), i);
@@ -33,7 +30,6 @@ DoublyLinkedList<T>::DoublyLinkedList(const DoublyLinkedList<T>& source) {
 
 template <typename T>
 DoublyLinkedList<T>& DoublyLinkedList<T>::operator=(const DoublyLinkedList<T>& source) {
-    // Implement this function
     clear();
     Node<T>* curr = source.head;
 
@@ -152,7 +148,6 @@ std::string DoublyLinkedList<T>::toString(){
 
 template <typename T>
 void DoublyLinkedList<T>::clear() {	
-    // Implement this function
     Node<T>* temp = head;
     while(head != nullptr){
         temp = head->next;

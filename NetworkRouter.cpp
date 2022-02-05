@@ -5,8 +5,6 @@
 #include <fstream>
 
 
-//extra credit
-// loadBlockedAddresses
 void NetworkRouter::loadBlockedAddresses(std::string filename){
 	std::string line;
 	std::ifstream fin(filename);
